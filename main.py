@@ -22,6 +22,7 @@ def main():
     print("initial:", str(initial))
     print("iterations:", iterations)
     print("length:", length)
+    print("".join(str(e) for e in arr), "(initial)")
     for i in range(iterations):
         copy = list(arr)
         # index out of bounds
@@ -33,6 +34,7 @@ def main():
         for j in range(1, length-1):
             arr[j] = 1 if (copy[j-1], copy[j], copy[j+1]) in on_rules else 0
         print("".join(str(e) for e in arr))
+        print()
 
 
 if __name__ == "__main__":
