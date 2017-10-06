@@ -33,8 +33,7 @@ def main():
         
         for j in range(1, length-1):
             arr[j] = 1 if (copy[j-1], copy[j], copy[j+1]) in on_rules else 0
-        print("".join(str(e) for e in arr))
-        print()
+        print("\n" + "".join(str(e) for e in arr))
 
 
 if __name__ == "__main__":
