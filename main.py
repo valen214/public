@@ -13,7 +13,6 @@ def main():
     iterations = 10
     fixed_boundary = False
     
-    
     arr = initial if isinstance(initial, list) else (
             [int(i) for i in str(initial)])
     length = len(initial)
